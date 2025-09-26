@@ -25,7 +25,7 @@ namespace PrimerParcial.Models
         // FK
         public int CategoryId { get; set; }
 
-        public Category Category { get; set; }
-        public ICollection<Ingredient> Ingredients { get; set; }
+        public Category? Category { get; set; }
+        public ICollection<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
     }
 }
